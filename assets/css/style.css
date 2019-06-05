@@ -1,0 +1,242 @@
+@charset "utf-8";
+/* CSS Document */
+
+*{
+	margin:0;
+	padding:0;
+}
+#login-form {
+	margin:5% auto;
+	max-width:500px;
+}
+/* home page */
+#wrapper{
+	padding-top:50px;
+}
+
+table.create {
+	box-shadow: 2px 2px 2px grey;
+	padding:10px;
+
+}
+
+table.create td {
+	box-shadow: 2px 2px 2px grey;
+	padding:10px;
+	font-size:14px;
+	font-weight: ;
+
+}
+
+table.create td input{
+	padding:5px;
+
+}
+
+table.project {
+	box-shadow: 2px 2px 2px grey;
+	padding:10px;
+	width:50%;
+	margin-left:10px;
+
+}
+
+table.project td {
+	box-shadow: 2px 2px 2px grey;
+	padding:10px;
+	font-size:14px;
+	font-weight: ;
+
+}
+
+table.project td input{
+	padding:;
+
+}
+
+.console {
+	margin-top: 40px;
+	height: ;
+	min-height:500px;
+	overflow-x: hidden;
+	overflow-y: auto;
+	border: 0px solid black;
+	box-shadow: 0px 0px 0px grey;
+	padding: 20px;
+}
+
+.consolelog {
+	margin-left:;
+        height: ;
+        overflow-x: hidden;
+        overflow-y: auto;
+        border: 0px solid black;
+        box-shadow: 0px 0px 0px grey;
+        padding: 20px;
+}
+
+.info {
+	margin-left:30px;
+	margin-top: 30px;
+}
+
+
+
+h4.myproject   {
+	box-shadow: 1px 1px 1px grey;
+	background-color: ;
+	padding:10px;
+	font-weight: normal;
+	cursor: pointer;
+}
+
+h4.myproject:hover {
+
+	background-color: lightgrey;
+}
+
+h4.action   {
+	box-shadow: 1px 1px 1px grey;
+	margin-left:10px;
+	background-color: ;
+	padding:10px;
+	font-size:14px;
+	font-weight: normal;
+	cursor: pointer;
+}
+
+.action   {
+        box-shadow: 1px 1px 1px grey;
+        margin-left:10px;
+        background-color: ;
+        padding:10px;
+        font-size:14px;
+        font-weight: normal;
+        cursor: pointer;
+}
+
+progress {
+	height:;
+	float:right;
+}
+
+h5 {padding:0;}
+
+h4.action:hover {
+
+	background-color: lightgrey;
+}
+
+h4.download   {
+        box-shadow: 1px 1px 1px grey;
+        margin-left:10px;
+        background-color: ;
+        padding:10px;
+        font-size:14px;
+        font-weight: normal;
+        cursor:;
+}
+
+h4.download:hover {
+
+        background-color: lightgrey;
+}
+
+.created {
+	font-style: italic;
+	font-weight: normal;
+	float:right;
+	font-size: ;
+	
+}
+
+#bar_blank {
+  border: solid 1px #000;
+  height: 20px;
+  width: 300px;
+}
+
+#bar_color {
+  background-color: #006666;
+  height: 20px;
+  width: 0px;
+}
+
+#bar_blank, #hidden_iframe {
+  display: none;
+}
+
+form.search tr {
+	box-shadow: 1px 1px 1px black;
+	padding: 10px;
+	font-size: 18px;
+
+}
+table.sqlres {
+	width: 100%;
+	border: 1px solid black;
+}
+
+table.sqlres td,th{
+	padding: 5px;
+	text-align:center;
+	width:;
+}
+
+#manual {
+	border: 1px solid black;
+}
+
+#manual td,th {
+        padding:5px;
+	text-align:center;
+}
+
+
+/* Center the loader */
+#loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #3498db;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 } 
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom { 
+  from{ bottom:-100px; opacity:0 } 
+  to{ bottom:0; opacity:1 }
+}
+

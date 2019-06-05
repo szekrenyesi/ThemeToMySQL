@@ -1,0 +1,17 @@
+body {
+    padding-top: 50px;
+}
+.jumbotron {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding: 40px 15px;
+}
+
+.info {
+	margin-top: 30px;
+}
+
+.info p {
+	text-align: justify;
+	font-size: 16px;
+}
