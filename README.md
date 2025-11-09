@@ -15,7 +15,7 @@ or
 
 ## Installation (native mode)
 
-<span style="color:red">*Recommended only for older Linux systems (e.g Ubuntu 16.04) considering the old version of PHP*</span>
+<font style="color:red">*Recommended only for older Linux systems (e.g Ubuntu 16.04) considering the old version of PHP*</font>
 
 1. Update your system:
 
