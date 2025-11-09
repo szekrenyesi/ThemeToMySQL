@@ -1,9 +1,9 @@
 [database]
-servername = localhost
+servername = 127.0.0.1
 username = root
 password = your_password
 dbname = users
 [projects]
-max_file_size = 4000000
-max_project = 5
+max_file_size = 10000000
+max_project = 50
 

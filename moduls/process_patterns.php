@@ -210,6 +210,7 @@ foreach($patstr as $pattern){
 	}
 }
 
+
 echo "Processing patdur.txt...${newline}";
 
 $patdur = proc_file($patdurpath,2);
