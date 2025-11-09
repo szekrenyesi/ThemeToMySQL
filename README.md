@@ -156,13 +156,13 @@ mysql -u root -p < mysql/projects.sql
 docker pull szekrenyesi/theme2mysql:latest
 ```
 
-9. Run the container:
+9. Run the container (from the ThemeToMySQL folder):
 
 ```bash
 docker run -d --rm --network="host" \
     --name theme2mysql \
-    -v /path/on/host/data:/var/www/html/ThemeToMySQL/data \
-    -v /path/on/host/conf:/var/www/html/ThemeToMySQL/conf \
+    -v data:/var/www/html/ThemeToMySQL/data \
+    -v conf:/var/www/html/ThemeToMySQL/conf \
     szekrenyesi/theme2mysql:latest
 ```
 
