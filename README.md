@@ -168,4 +168,4 @@ docker run -d --rm --network="host" \
 
 10. You can reach the web service under localhost using port 8080:
 
-[http://localhost/ThemeToMySQL:8080](http://localhost/ThemeToMySQL:8080)
+[http://localhost:8080/ThemeToMySQL](http://localhost:8080/ThemeToMySQL)
