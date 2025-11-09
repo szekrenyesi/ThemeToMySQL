@@ -15,7 +15,7 @@ or
 
 ## Installation (native mode)
 
-<font style="color:red">*Recommended only for older Linux systems (e.g Ubuntu 16.04) considering the old version of PHP*</font>
+*Recommended only for older Linux systems (e.g Ubuntu 16.04) considering the old version of PHP*
 
 1. Update your system:
 
@@ -36,7 +36,14 @@ sudo apt-get install mysql-server
 ```
 *Please check the MySQL manual for further settings.*
 
-4. Install PHP & required modules:
+4. Edit `/etc/mysql/my.cnf` and add:
+
+```
+[mysqld]
+default_authentication_plugin=mysql_native_password
+```
+
+5. Install PHP & required modules:
 
 ```bash
 sudo apt-get install php7.4 \
@@ -47,7 +54,7 @@ sudo apt-get install php7.4 \
     php7.4-mcrypt
 ```
 
-5. Clone the repository into your DocumentRoot folder (default: `/var/www/html`):
+6. Clone the repository into your DocumentRoot folder (default: `/var/www/html`):
 
 ```bash
 cd /path/to/your/documentroot/
@@ -55,7 +62,7 @@ git clone https://github.com/szekrenyesi/ThemeToMySQL.git
 cd ThemeToMySQL
 ```
 
-6. Edit `conf/config.ini.default` with your MySQL credentials and rename it:
+7. Edit `conf/config.ini.default` with your MySQL credentials and rename it:
 
 ```
 [database]
@@ -72,13 +79,13 @@ max_project = 50
 mv conf/config.ini.default conf/config.ini
 ```
 
-7. Import the database for users and projects:
+8. Import the database for users and projects:
 
 ```bash
 mysql -u root -p < mysql/projects.sql
 ```
 
-8. You can reach the web service at:
+9. You can reach the web service at:
 
 [http://localhost/ThemeToMySQL](http://localhost/ThemeToMySQL)
 
@@ -106,7 +113,7 @@ sudo apt install mysql-server
 
 *Please check the MySQL manual for further settings.*
 
-4. Edit `/etc/mysql/mysql.conf.d/mysqld.cnf` and add:
+4. Edit `/etc/mysql/my.cnf` and add:
 
 ```
 [mysqld]
