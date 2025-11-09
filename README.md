@@ -5,7 +5,7 @@ This interface was created for importing T-patterns from [Theme](http://patternv
 ## Requirements
 
 - Apache 2.x
-- PHP 7.0
+- PHP 7.4
 - MySQL server
 
 or
