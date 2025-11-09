@@ -84,14 +84,14 @@ mysql -u root -p < mysql/projects.sql
 
 ---
 
-### Installation (using Docker)
+## Installation (using Docker)
 
 *Recommend way for current Linux systems*
 
 1. Update your system:
 
 ```bash
-sudo apt-get update
+sudo apt update
 ```
 
 2. Install Docker:  
@@ -101,7 +101,7 @@ sudo apt-get update
 3. Install MySQL:
 
 ```bash
-sudo apt-get install mysql-server
+sudo apt install mysql-server
 ```
 
 *Please check the MySQL manual for further settings.*
