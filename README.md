@@ -6,37 +6,31 @@ This interface was created for importing T-patterns from [Theme](http://patternv
 	
 	- Apache 2.x
 	- PHP 7.0
-	- MySQL
+	- MySQL server
 	
 	or
 	
 	- Docker
-	- 
+	- MySQL server
 
 ## Installation (native mode)
 	
 	1. Update your system: 
 		
 		```
-		
-		sudo apt-get update
-		
+		sudo apt-get update	
 		```
 
 	2. Installing Apache: 
 		
 		```
-		
 		sudo apt-get install apache2
-	
 		```
 		
 	3. Install MySQL:
 
 		```
-		
 		sudo apt-get install mysql-server
-		
 		```
 		Please check mysql manual for further settings!
 		
@@ -131,8 +125,15 @@ This interface was created for importing T-patterns from [Theme](http://patternv
 		mv conf/config.ini.default conf/config.ini
 		
 		```
+	7. Create database for users and projects:
+		
+		```
+		
+		mysql -u root -p < mysql/projects.sql
 
-	7. Pull docker image:
+		```
+
+	8. Pull docker image:
 	
 	```
 	
@@ -141,7 +142,7 @@ This interface was created for importing T-patterns from [Theme](http://patternv
 	```
 	
 	
-	8. Run the container:
+	9. Run the container:
 	
 	```
 	
