@@ -15,6 +15,8 @@ or
 
 ## Installation (native mode)
 
+*Recommended only for older Linux systems (e.g Ubuntu 16.04) considering the old version of PHP*
+
 1. Update your system:
 
 ```bash
@@ -55,11 +57,22 @@ cd ThemeToMySQL
 
 6. Edit `conf/config.ini.default` with your MySQL credentials and rename it:
 
+```
+[database]
+servername = 127.0.0.1
+username = <YOUR LOCAL MYSQL USERNAME>
+password = <YOUR LOCAL MYSQL PASSWORD>
+dbname = users
+[projects]
+max_file_size = 10000000
+max_project = 50
+```
+
 ```bash
 mv conf/config.ini.default conf/config.ini
 ```
 
-7. Create the database for users and projects:
+7. Import the database for users and projects:
 
 ```bash
 mysql -u root -p < mysql/projects.sql
@@ -71,7 +84,9 @@ mysql -u root -p < mysql/projects.sql
 
 ---
 
-### Installation (using Docker on current Linux systems)
+### Installation (using Docker)
+
+*Recommend way for current Linux systems*
 
 1. Update your system:
 
@@ -80,6 +95,7 @@ sudo apt-get update
 ```
 
 2. Install Docker:  
+
 *Please refer to a manual for your Linux distribution.*
 
 3. Install MySQL:
@@ -87,11 +103,12 @@ sudo apt-get update
 ```bash
 sudo apt-get install mysql-server
 ```
+
 *Please check the MySQL manual for further settings.*
 
 4. Edit `/etc/mysql/mysql.conf.d/mysqld.cnf` and add:
 
-```bash
+```
 [mysqld]
 default_authentication_plugin=mysql_native_password
 ```
@@ -104,6 +121,17 @@ cd ThemeToMySQL
 ```
 
 6. Edit `conf/config.ini.default` with your MySQL credentials and rename it:
+
+```
+[database]
+servername = 127.0.0.1
+username = <YOUR LOCAL MYSQL USERNAME>
+password = <YOUR LOCAL MYSQL PASSWORD>
+dbname = users
+[projects]
+max_file_size = 10000000
+max_project = 50
+```
 
 ```bash
 mv conf/config.ini.default conf/config.ini
